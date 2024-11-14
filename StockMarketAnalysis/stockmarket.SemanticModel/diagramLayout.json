@@ -1,0 +1,164 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 637.2993761610892,
+            "y": 0
+          },
+          "nodeIndex": "Magnificent 7",
+          "nodeLineageTag": "e747cfd8-3167-4bc9-8c28-b7dc7b128cde",
+          "size": {
+            "height": 151.5,
+            "width": 265.25
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 343.19257382421732,
+            "y": 0
+          },
+          "nodeIndex": "dim_sector",
+          "nodeLineageTag": "da3de813-ea10-4116-b732-ec3a7b432032",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dim_calendar",
+          "size": {
+            "height": 267.33333333333332,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 376.3809523809524,
+            "y": 753.9761904761904
+          },
+          "nodeIndex": "fact_stock_price",
+          "nodeLineageTag": "abb40750-a72a-4d5d-abad-adebbe93ee05",
+          "size": {
+            "height": 360,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 391.2729897646136,
+            "y": 247.84768241834237
+          },
+          "nodeIndex": "dim_stocks",
+          "nodeLineageTag": "51c0c126-5b99-4c9a-a23e-fc9d3c34b702",
+          "size": {
+            "height": 301.33333333333336,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1047.091042827756,
+            "y": 5.4285714285713984
+          },
+          "nodeIndex": "dim_index",
+          "nodeLineageTag": "97775206-8483-4dba-8517-2a0fef8d041a",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 816.09104282775632,
+            "y": 611.15476190476168
+          },
+          "nodeIndex": "fact_index_price",
+          "nodeLineageTag": "a724d0e8-cd1b-42d6-809c-5cdc390b06db",
+          "size": {
+            "height": 518.33333333333328,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1375.8907595091157,
+            "y": 5.7142857142857152
+          },
+          "nodeIndex": "Measure Table",
+          "nodeLineageTag": "392f1e3a-5f0f-4ba8-8dbc-c297e24dce30",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1771.2675166225862,
+            "y": 0
+          },
+          "nodeIndex": "index_nasdaq",
+          "nodeLineageTag": "58daea25-472c-4e4c-a6d1-000bf805b7ef",
+          "size": {
+            "height": 176.85714285714285,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1771.3193309376874,
+            "y": 204.60119047619046
+          },
+          "nodeIndex": "index_sp500",
+          "nodeLineageTag": "9aea091b-c4a2-4b7d-bc13-c08c920b623b",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 862.46218808054432,
+            "y": 238.3154761904761
+          },
+          "nodeIndex": "dim_index_stocks",
+          "nodeLineageTag": "efe5b32f-1d9c-4782-8334-359bdba83f8f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 11
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

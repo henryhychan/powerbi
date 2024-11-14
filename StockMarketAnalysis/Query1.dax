@@ -1,0 +1,18 @@
+﻿/* START QUERY BUILDER */
+DEFINE
+	MEASURE 'Measure Table'[RankByVol] = RANK(DENSE, ALLSELECTED('fact_stock_price'), ORDERBY([Total Volume], DESC))
+	MEASURE 'Measure Table'[Rank1] = RANKX(ALL('fact_stock_price'), [Total Volume],  , DESC)
+	MEASURE 'Measure Table'[Rank2] = RANKX(ALL('fact_stock_price'[symbol]), [Total Volume],  , DESC)
+EVALUATE
+SUMMARIZECOLUMNS(
+	fact_stock_price[date],
+  fact_stock_price[symbol],
+  "Total Volume", [Total Volume],
+  "Rank", [RankByVol],
+  "Rank1", [Rank1],
+  "Rank2", [Rank2]
+)
+ORDER BY 
+  fact_stock_price[date] DESC,
+  "Rank" ASC
+/* END QUERY BUILDER */

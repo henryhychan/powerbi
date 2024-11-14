@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "stockmarket"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d3bc372d-2023-4eea-aa21-7b94673cc56c"
+  }
+}

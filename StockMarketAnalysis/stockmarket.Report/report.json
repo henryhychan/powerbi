@@ -1,0 +1,376 @@
+{
+  "config": "{\"version\":\"5.53\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "filters": "[]",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "ScrollingTextVisual1448795304508"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Magnificent 7",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "017d0361fff8b822b42c",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3cb8abd3dd763862c8c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":24,\"z\":2000,\"width\":168,\"height\":672,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Magnificent 7.Symbol\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Magnificent 7\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Symbol\"},\"Name\":\"Magnificent 7.Symbol\",\"NativeReferenceName\":\"Symbol\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Magnificent 7\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Symbol\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}],[{\"Literal\":{\"Value\":\"'US:NVDA'\"}}]]}}}}}]}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"a0000bdf30179ca80fd4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Magnificent 7\"}},\"Property\":\"Symbol\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"requireSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 672.00,
+          "width": 168.00,
+          "x": 16.00,
+          "y": 24.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"61719fc50959069d0377\",\"layouts\":[{\"id\":0,\"position\":{\"x\":192,\"y\":112.00000000000001,\"z\":1000,\"width\":1056,\"height\":592,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Series\":[{\"queryRef\":\"Magnificent 7.Symbol\"}],\"Category\":[{\"queryRef\":\"stock_price.date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Cumulative Stock Price Change\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Magnificent 7\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"m1\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Symbol\"},\"Name\":\"Magnificent 7.Symbol\",\"NativeReferenceName\":\"Symbol\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"},\"Name\":\"stock_price.date\",\"NativeReferenceName\":\"date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m1\"}},\"Property\":\"Cumulative Stock Price %\"},\"Name\":\"Measure Table.Cumulative Stock Price Change\",\"NativeReferenceName\":\"Cumulative Stock Price Change\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 592.00,
+          "width": 1056.00,
+          "x": 192.00,
+          "y": 112.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e63eeb0612b056bff0bf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":192,\"y\":0,\"z\":0,\"width\":544,\"height\":96,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"calendar.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"calendar.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-02-14T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'After'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-02-14T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_calendar\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}},\"Function\":4}}}],\"Top\":120}}},\"Type\":2},{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 96.00,
+          "width": 544.00,
+          "x": 192.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 6",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1d72606a693ca1b94327",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"39db6bb133fe11a23de6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":208,\"z\":2000,\"width\":760,\"height\":496,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Play\":[{\"queryRef\":\"stock_price.date\"}],\"Y\":[{\"queryRef\":\"index_price.pct_chg\"}],\"X\":[{\"queryRef\":\"stock_price.pct_chg\",\"active\":true}],\"Series\":[{\"queryRef\":\"stocks.name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"dim_stocks\",\"Type\":0},{\"Name\":\"i\",\"Entity\":\"fact_index_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"},\"Name\":\"stock_price.date\",\"NativeReferenceName\":\"date\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"i\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"index_price.pct_chg\",\"NativeReferenceName\":\"Average of pct_chg\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"stock_price.pct_chg\",\"NativeReferenceName\":\"Average of pct_chg1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"name\"},\"Name\":\"stocks.name\",\"NativeReferenceName\":\"name\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"}},\"Function\":4}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 496.00,
+          "width": 760.00,
+          "x": 0.00,
+          "y": 208.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"69801dcd45bdfd96a174\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":768,\"height\":200,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Columns\":[{\"queryRef\":\"calendar.Date\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(stock_price.pct_chg)\"}],\"Rows\":[{\"queryRef\":\"sector.sector\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s1\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"dim_sector\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"CountNonNull(stock_price.pct_chg)\",\"NativeReferenceName\":\"Average of pct_chg\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"calendar.Date\",\"NativeReferenceName\":\"Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sector\"},\"Name\":\"sector.sector\",\"NativeReferenceName\":\"sector\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sector\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"sector.sector\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_sector\"}},\"Property\":\"sector\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Basic Materials'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 768.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a42a36349f96c3355123\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784,\"y\":0,\"z\":1000,\"width\":472,\"height\":704,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"calendar.Date\",\"active\":true}],\"Rows\":[{\"queryRef\":\"sector.sector\"}],\"Y\":[{\"queryRef\":\"CountNonNull(stock_price.pct_chg)\"}],\"Series\":[{\"queryRef\":\"stock_price.price_change_group\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"dim_sector\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"calendar.Date\",\"NativeReferenceName\":\"Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sector\"},\"Name\":\"sector.sector\",\"NativeReferenceName\":\"sector\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"CountNonNull(stock_price.pct_chg)\",\"NativeReferenceName\":\"Average of pct_chg\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"price_change_group\"},\"Name\":\"stock_price.price_change_group\",\"NativeReferenceName\":\"price_change_group\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_calendar\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"}},\"Function\":4}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"c\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 704.00,
+          "width": 472.00,
+          "x": 784.00,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Stock",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "8a35fe63adb4ae4d44f6",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1664ec1e44cd05367870\",\"layouts\":[{\"id\":0,\"position\":{\"x\":296,\"y\":104,\"z\":1,\"width\":952,\"height\":360,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_stock_price.date\",\"active\":true}],\"Series\":[{\"queryRef\":\"dim_stocks.symbol\"}],\"Y2\":[{\"queryRef\":\"Measure Table.Cumulative Stock Price %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_stocks\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"},\"Name\":\"fact_stock_price.date\",\"NativeReferenceName\":\"date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"symbol\"},\"Name\":\"dim_stocks.symbol\",\"NativeReferenceName\":\"symbol\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Cumulative Stock Price %\"},\"Name\":\"Measure Table.Cumulative Stock Price %\",\"NativeReferenceName\":\"Cumulative Stock Price %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"lineStyles\":[{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 360.00,
+          "width": 952.00,
+          "x": 296.00,
+          "y": 104.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"3117cb8e0065ae4fb344\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":32,\"z\":2,\"width\":280,\"height\":656,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_stocks.sector Hierarchy.sector\",\"active\":true},{\"queryRef\":\"dim_stocks.sector Hierarchy.symbol\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_stocks\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Hierarchy\":\"sector Hierarchy\"}},\"Level\":\"sector\"},\"Name\":\"dim_stocks.sector Hierarchy.sector\",\"NativeReferenceName\":\"sector Hierarchy sector\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Hierarchy\":\"sector Hierarchy\"}},\"Level\":\"symbol\"},\"Name\":\"dim_stocks.sector Hierarchy.symbol\",\"NativeReferenceName\":\"sector Hierarchy symbol\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"dim_stocks.sector Hierarchy.sector\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_stocks\"}},\"Property\":\"sector\"}}],\"isPinned\":true},{\"queryRefs\":[\"dim_stocks.sector Hierarchy.symbol\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Utilities'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_stocks\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"sector\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"symbol\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Utilities'\"}},{\"Literal\":{\"Value\":\"'US:AEP'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"filterExpressionMetadata\":{\"expressions\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_stocks\"}},\"Hierarchy\":\"sector Hierarchy\"}},\"Level\":\"sector\"}},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_stocks\"}},\"Hierarchy\":\"sector Hierarchy\"}},\"Level\":\"symbol\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_stocks\"}},\"Property\":\"sector\"}},\"Right\":{\"Literal\":{\"Value\":\"'Utilities'\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_stocks\"}},\"Property\":\"symbol\"}},\"Right\":{\"Literal\":{\"Value\":\"'US:AEP'\"}}}}}],\"valueMap\":{\"0\":\"Utilities\",\"1\":\"US:AEP\"}}]}}}",
+          "filters": "[]",
+          "height": 656.00,
+          "width": 280.00,
+          "x": 8.00,
+          "y": 32.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"c00736723dec3fc83bb6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":296,\"y\":0,\"z\":0,\"width\":968,\"height\":96,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"fact_stock_price.date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"},\"Name\":\"fact_stock_price.date\",\"NativeReferenceName\":\"date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2024-01-02T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2024-01-02T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 96.00,
+          "width": 968.00,
+          "x": 296.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"fba6060dcfd8fc0834f8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":296,\"y\":480,\"z\":3,\"width\":896,\"height\":208,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_stock_price.date\",\"active\":true}],\"Y2\":[{\"queryRef\":\"Measure Table.Voume 10D SMA\"}],\"Y\":[{\"queryRef\":\"Measure Table.Stock Total Vol\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"},\"Name\":\"fact_stock_price.date\",\"NativeReferenceName\":\"date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Voume 10D SMA\"},\"Name\":\"Measure Table.Voume 10D SMA\",\"NativeReferenceName\":\"Voume 10D SMA\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"},\"Name\":\"Measure Table.Stock Total Vol\",\"NativeReferenceName\":\"Stock Total Vol\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 208.00,
+          "width": 896.00,
+          "x": 296.00,
+          "y": 480.00,
+          "z": 3.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"c3577b36be4d86695dbc\",\"target\":\"838ce3c27346ccd8dcbc\",\"type\":1},{\"source\":\"991760e0c2b844e30c3a\",\"target\":\"c3577b36be4d86695dbc\",\"type\":1},{\"source\":\"c3577b36be4d86695dbc\",\"target\":\"991760e0c2b844e30c3a\",\"type\":1}]}",
+      "displayName": "Sector",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b4b41cc634e3b4f88e95",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"838ce3c27346ccd8dcbc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":224,\"y\":16,\"z\":5000,\"width\":1040,\"height\":80,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"ScrollingTextVisual1448795304508\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_stock_price.symbol\"}],\"Measure Deviation\":[{\"queryRef\":\"CountNonNull(fact_stock_price.pct_chg)\"}],\"Measure Absolute\":[{\"queryRef\":\"CountNonNull(fact_stock_price.close)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"fact_stock_price.symbol\",\"NativeReferenceName\":\"symbol\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"CountNonNull(fact_stock_price.pct_chg)\",\"NativeReferenceName\":\"% Chg\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"close\"}},\"Function\":1},\"Name\":\"CountNonNull(fact_stock_price.close)\",\"NativeReferenceName\":\"Closing Price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"close\"}},\"Function\":1}}}]},\"columnProperties\":{\"CountNonNull(fact_stock_price.close)\":{\"displayName\":\"Closing Price\"},\"CountNonNull(fact_stock_price.pct_chg)\":{\"displayName\":\"% Chg\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 1040.00,
+          "x": 224.00,
+          "y": 16.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"8fed4572a9923a0c7031\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":16,\"z\":0,\"width\":208,\"height\":80,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"fact_stock_price.date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"},\"Name\":\"fact_stock_price.date\",\"NativeReferenceName\":\"date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":2,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"datetime'2024-11-08T00:00:00'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"s\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"date\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 80.00,
+          "width": 208.00,
+          "x": 16.00,
+          "y": 16.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"991760e0c2b844e30c3a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":824,\"y\":96,\"z\":4000,\"width\":440,\"height\":616,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_stocks.symbol\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(fact_stock_price.pct_chg)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_stocks\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"symbol\"},\"Name\":\"dim_stocks.symbol\",\"NativeReferenceName\":\"symbol\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"Avg(fact_stock_price.pct_chg)\",\"NativeReferenceName\":\"Average of pct_chg\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pct_chg\"}},\"Function\":1}}},{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"symbol\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"pct_chg\"}},\"Function\":1}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#E66C37'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'% Change'\"}}}}}],\"valueAxis\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Stocks Performance in Sector'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"d061fe3c9e0b7c745fe7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_sector\"}},\"Property\":\"sector\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"requireSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}]",
+          "height": 616.00,
+          "width": 440.00,
+          "x": 824.00,
+          "y": 96.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c3577b36be4d86695dbc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":16,\"y\":96,\"z\":1000,\"width\":800,\"height\":200,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"sector.sector\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Stock Total Vol\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"dim_sector\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sector\"},\"Name\":\"sector.sector\",\"NativeReferenceName\":\"sector\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"},\"Name\":\"Measure Table.Stock Total Vol\",\"NativeReferenceName\":\"Stock Total Vol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'OutsideEnd'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000000D\"}}},\"optimizeLabelDisplay\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sector Volume'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.00,
+          "width": 800.00,
+          "x": 16.00,
+          "y": 96.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cad5fc6d61676668c4be\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":3000,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"de15f63c462cac428da7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8,\"y\":296,\"z\":2000,\"width\":808,\"height\":416,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Stock Total Vol\"}],\"Tooltips\":[{\"queryRef\":\"Measure Table.Avg Price %\"}],\"Group\":[{\"queryRef\":\"dim_stocks.sector Hierarchy.sector\",\"active\":true},{\"queryRef\":\"dim_stocks.sector Hierarchy.symbol\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dim_stocks\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"},\"Name\":\"Measure Table.Stock Total Vol\",\"NativeReferenceName\":\"Stock Total Vol\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Avg Price %\"},\"Name\":\"Measure Table.Avg Price %\",\"NativeReferenceName\":\"Price %\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Hierarchy\":\"sector Hierarchy\"}},\"Level\":\"sector\"},\"Name\":\"dim_stocks.sector Hierarchy.sector\",\"NativeReferenceName\":\"sector Hierarchy sector\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Hierarchy\":\"sector Hierarchy\"}},\"Level\":\"symbol\"},\"Name\":\"dim_stocks.sector Hierarchy.symbol\",\"NativeReferenceName\":\"sector Hierarchy symbol\"}]},\"columnProperties\":{\"Measure Table.Avg Price %\":{\"displayName\":\"Price %\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sector Volume Map'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading6'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"symbol\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s1\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"symbol\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"}}}],\"Top\":50}}},\"Type\":2},{\"Name\":\"s1\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"symbol\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 416.00,
+          "width": 808.00,
+          "x": 8.00,
+          "y": 296.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Indexes",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c3fe6420416da9f273b1",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"245b7a49a9b208e2a692\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":392,\"z\":2000,\"width\":304,\"height\":312,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_index.index_name\"},{\"queryRef\":\"fact_stock_price.symbol\"},{\"queryRef\":\"fact_stock_price.pct_chg\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_index\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"index_name\"},\"Name\":\"dim_index.index_name\",\"NativeReferenceName\":\"index_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"fact_stock_price.symbol\",\"NativeReferenceName\":\"symbol\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"fact_stock_price.pct_chg\",\"NativeReferenceName\":\"Average of pct_chg\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pct_chg\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 312.00,
+          "width": 304.00,
+          "x": 0.00,
+          "y": 392.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9ed357ed30b94ee301df\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":0,\"z\":1000,\"width\":208,\"height\":64,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_index.index_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_index\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"index_name\"},\"Name\":\"dim_index.index_name\",\"NativeReferenceName\":\"index_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_index\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"index_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'NASDAQ'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'US Index'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"8105982f8813217960cf\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_index\"}},\"Property\":\"index_name\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"requireSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 64.00,
+          "width": 208.00,
+          "x": 32.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"cb08ba671849c9f72a6c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":264,\"y\":8,\"z\":0,\"width\":1008,\"height\":368,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_index_price.date\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_index_price.close)\"},{\"queryRef\":\"Measure Table.Avg Index Price\"},{\"queryRef\":\"Measure Table.Index 50D SMA\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_index_price\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"},\"Name\":\"fact_index_price.date\",\"NativeReferenceName\":\"date\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"close\"}},\"Function\":1},\"Name\":\"CountNonNull(fact_index_price.close)\",\"NativeReferenceName\":\"Index Price\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Index 20D SMA\"},\"Name\":\"Measure Table.Avg Index Price\",\"NativeReferenceName\":\"20-day SMA\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Index 50D SMA\"},\"Name\":\"Measure Table.Index 50D SMA\",\"NativeReferenceName\":\"50-day SMA\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}}}]},\"columnProperties\":{\"CountNonNull(fact_index_price.close)\":{\"displayName\":\"Index Price\"},\"Measure Table.Avg Index Price\":{\"displayName\":\"20-day SMA\"},\"Measure Table.Index 50D SMA\":{\"displayName\":\"50-day SMA\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"matchLineColor\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Index '\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 368.00,
+          "width": 1008.00,
+          "x": 264.00,
+          "y": 8.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d9ccd96f09f48f5c348a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":304,\"y\":384,\"z\":2003,\"width\":944,\"height\":320,\"tabOrder\":2003}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"fact_stock_price.symbol\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(fact_stock_price.pct_chg)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"fact_stock_price.symbol\",\"NativeReferenceName\":\"symbol\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"pct_chg\"}},\"Function\":1},\"Name\":\"CountNonNull(fact_stock_price.pct_chg)\",\"NativeReferenceName\":\"Average of pct_chg\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 320.00,
+          "width": 944.00,
+          "x": 304.00,
+          "y": 384.00,
+          "z": 2003.00
+        },
+        {
+          "config": "{\"name\":\"f0c3478a651c4977c8b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":64,\"z\":2001,\"width\":208,\"height\":64,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Last Index Close\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Last Index Close\"},\"Name\":\"Measure Table.Last Index Close\",\"NativeReferenceName\":\"Index Close\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Last Index Close\"}}}]},\"columnProperties\":{\"Measure Table.Last Index Close\":{\"displayName\":\"Index Close\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.00,
+          "width": 208.00,
+          "x": 32.00,
+          "y": 64.00,
+          "z": 2001.00
+        },
+        {
+          "config": "{\"name\":\"f6d3dca980b2a436da1d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":128,\"z\":2002,\"width\":208,\"height\":72,\"tabOrder\":2002}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Last Index % Change\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Last Index % Change\"},\"Name\":\"Measure Table.Last Index % Change\",\"NativeReferenceName\":\"Change % \"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Last Index % Change\"}}}]},\"columnProperties\":{\"Measure Table.Last Index % Change\":{\"displayName\":\"Change % \"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_index_price\"}},\"Property\":\"pct_chg\"}},\"Function\":1}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#E66C37'\"}},\"value\":{\"Literal\":{\"Value\":\"-100D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#118DFF'\"}},\"value\":{\"Literal\":{\"Value\":\"100D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'FD'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 72.00,
+          "width": 208.00,
+          "x": 32.00,
+          "y": 128.00,
+          "z": 2002.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"c306be2777e30b841eaa\",\"target\":\"a786ce3ffca4fbe0eec2\",\"type\":1},{\"source\":\"c306be2777e30b841eaa\",\"target\":\"0e5f5bd202a60350fc17\",\"type\":1},{\"source\":\"c306be2777e30b841eaa\",\"target\":\"cc0a8644c5a7f618d89a\",\"type\":1},{\"source\":\"c306be2777e30b841eaa\",\"target\":\"3af7e42d6ff3d1b33e53\",\"type\":1}]}",
+      "displayName": "Overview",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f65fb369fad5652212fa",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0e5f5bd202a60350fc17\",\"layouts\":[{\"id\":0,\"position\":{\"x\":720,\"y\":0,\"z\":7000,\"width\":272,\"height\":95.99999999999999,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Measure Table.Stock Total Vol\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"},\"Name\":\"Measure Table.Stock Total Vol\",\"NativeReferenceName\":\"Total Trading Volume\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"}}}]},\"columnProperties\":{\"Measure Table.Stock Total Vol\":{\"displayName\":\"Total Trading Volume\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"36D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 96.00,
+          "width": 272.00,
+          "x": 720.00,
+          "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"3af7e42d6ff3d1b33e53\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":384,\"z\":4000,\"width\":320,\"height\":336,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_stock_price.symbol\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Avg Price %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"fact_stock_price.symbol\",\"NativeReferenceName\":\"Stock\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Avg Price %\"},\"Name\":\"Measure Table.Avg Price %\",\"NativeReferenceName\":\"Price %\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Avg Price %\"}}}]},\"columnProperties\":{\"Measure Table.Average Price Change\":{\"displayName\":\"Price %\"},\"fact_stock_price.symbol\":{\"displayName\":\"Stock\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'OutsideEnd'\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Worst Performers'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading4'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"symbol\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Avg Price %\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 336.00,
+          "width": 320.00,
+          "x": 368.00,
+          "y": 384.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"69681abb189f15d61326\",\"layouts\":[{\"id\":0,\"position\":{\"x\":688,\"y\":112,\"z\":0,\"width\":560,\"height\":288,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"sector.sector\",\"active\":true}],\"Y\":[{\"queryRef\":\"Count(stock_price.price_change_group)\"}],\"Series\":[{\"queryRef\":\"stock_price.price_change_group\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"dim_sector\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sector\"},\"Name\":\"sector.sector\",\"NativeReferenceName\":\"sector\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"price_change_group\"}},\"Function\":5},\"Name\":\"Count(stock_price.price_change_group)\",\"NativeReferenceName\":\"Count of price_change_group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"price_change_group\"},\"Name\":\"stock_price.price_change_group\",\"NativeReferenceName\":\"price_change_group\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"price_change_group\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Price % Change'\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sector Performance'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 560.00,
+          "x": 688.00,
+          "y": 112.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9acc45b6743cff93d6e7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":704,\"y\":400,\"z\":1000,\"width\":544,\"height\":320,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_stocks.sector\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Sector Volume\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"dim_stocks\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"sector\"},\"Name\":\"dim_stocks.sector\",\"NativeReferenceName\":\"sector\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Sector Volume\"},\"Name\":\"Measure Table.Sector Volume\",\"NativeReferenceName\":\"Sector Volume\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Sector Volume\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'OutsideEnd'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"valueAxis\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sector Trading Volume'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_calendar\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_calendar\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}},\"Function\":4}}}],\"Top\":3}}},\"Type\":2},{\"Name\":\"d\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 320.00,
+          "width": 544.00,
+          "x": 704.00,
+          "y": 400.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a786ce3ffca4fbe0eec2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48,\"y\":384,\"z\":3000,\"width\":304,\"height\":336,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_stock_price.symbol\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Avg Price %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"fact_stock_price.symbol\",\"NativeReferenceName\":\"Stock\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Avg Price %\"},\"Name\":\"Measure Table.Avg Price %\",\"NativeReferenceName\":\"Price %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Avg Price %\"}}}]},\"columnProperties\":{\"Measure Table.Average Price Change\":{\"displayName\":\"Price %\"},\"fact_stock_price.symbol\":{\"displayName\":\"Stock\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top Performers'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading4'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"symbol\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Avg Price %\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 336.00,
+          "width": 304.00,
+          "x": 48.00,
+          "y": 384.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"afa97ec67a6a5bfd884a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48,\"y\":80,\"z\":6000,\"width\":304,\"height\":288,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_stock_price.price_change_group\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(fact_stock_price.symbol)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"price_change_group\"},\"Name\":\"fact_stock_price.price_change_group\",\"NativeReferenceName\":\"Count of price_change_group\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"}},\"Function\":5},\"Name\":\"CountNonNull(fact_stock_price.symbol)\",\"NativeReferenceName\":\"Count of symbol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Price %'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferInside'\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, percent of total'\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"price_change_group\"}},\"Right\":{\"Literal\":{\"Value\":\"'Up'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"price_change_group\"}},\"Right\":{\"Literal\":{\"Value\":\"'Down'\"}}}}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Market Thermometer'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 304.00,
+          "x": 48.00,
+          "y": 80.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"c306be2777e30b841eaa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":992,\"y\":16,\"z\":5000,\"width\":272,\"height\":80,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_calendar.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"dim_calendar.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"datetime'2024-11-08T00:00:00'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Date'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading2'\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_calendar\"}},\"Property\":\"Date\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_calendar\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"date\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"d\",\"Entity\":\"dim_calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 80.00,
+          "width": 272.00,
+          "x": 992.00,
+          "y": 16.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"cc0a8644c5a7f618d89a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":48,\"y\":0,\"z\":8000,\"width\":560,\"height\":80,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Stock Market Overview\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"32pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 560.00,
+          "x": 48.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"e9600bac613b05c7a2fd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":368,\"y\":80,\"z\":2000,\"width\":320,\"height\":304,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fact_stock_price.symbol\",\"active\":true}],\"Y\":[{\"queryRef\":\"Measure Table.Total Volume\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"fact_stock_price.symbol\",\"NativeReferenceName\":\"symbol\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"},\"Name\":\"Measure Table.Total Volume\",\"NativeReferenceName\":\"Stock Total Vol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Total Vol\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Trading Volume'\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000000D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Stocks'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fact_stock_price\"}},\"Property\":\"symbol\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measure Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Stock Vol Rank\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"fact_stock_price\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"symbol\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 304.00,
+          "width": 320.00,
+          "x": 368.00,
+          "y": 80.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
